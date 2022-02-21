@@ -2,14 +2,6 @@
     color: #e0e0e0;
 }
 
-.experiencia-texto {
-    font-size: 1.5rem;
-    line-height: 1.33;
-    margin-bottom: 60px;
-    max-width: 60ch;
-    color: #525252;
-}
-
 .experiencia .texto strong {
     color: #141414;
 }
@@ -39,8 +31,8 @@
 .empresa-ano {
     position: absolute;
     top: 22px;
-    left: -70px;
-    text-align: left;
+    left: -80px;
+    text-align: center;
     color: #525252;
     font-size: .875rem;
     width: 80px;
@@ -71,4 +63,36 @@
     border-radius: 4px;
     background-color: #fff;
     padding: 5px 10px;
+}
+
+@media(max-width: 800px){
+    .experiencia {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .experiencia .subtitulo {
+        color: #141414;
+    }
+
+    .experiencia-texto {
+        font-size: 1.25rem;
+    }
+
+    .empresa-ano {
+        position: initial;
+        order: 1;
+        width: initial;
+        text-align: left;
+    }
+
+    .empresa-ano::before {
+        content: 'Período: ';
+    }
+}
+
+@media(max-width: 400px){
+    .empresa {
+        grid-template-columns: 1fr;
+    }
 }
