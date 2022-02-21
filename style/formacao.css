@@ -60,3 +60,61 @@
     font-size: 1.125rem;
     color:#a3a3a3;
 }
+
+.cursos {
+    margin-bottom: 60px;
+}
+
+.formacao-extra h3 {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.formacao-extra h3::before {
+    display: block;
+    content:'';
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -36px;
+    top: -4px;
+}
+
+.cursos h3::before {
+    background: url('../img/cursos.svg') no-repeat center center;
+}
+
+.formacao-extra li {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.formacao-extra span {
+    color: #8f8f8f;
+}
+
+.cursos li {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 800px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+        gap: 40px;
+    }
+
+    .formacao .subtitulo {
+        color: #fff;
+    }
+
+    .formaca-texto {
+        font-size: 1.125rem;
+    }
+}
