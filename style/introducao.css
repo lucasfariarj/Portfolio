@@ -21,9 +21,18 @@
     z-index: -1;
 }
 
-.introducao p {
-    font-size: 1.5rem;
+.introducao ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.introducao li a {
+    font-size: .875rem;
+    border-radius: 4px;
+    padding: 10px;
     color: #525252;
+    background-color: #F5F5F5;
 }
 
 @media(max-width: 1000px) {
